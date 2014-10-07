@@ -117,7 +117,7 @@ class newrelic_plugins::mysql (
     plugin_path  => $plugin_path,
     download_url => "${$newrelic_plugins::params::mysql_download_baseurl}-${version}.tar.gz",
     version      => $version,
-    user         => $user
+    user         => 'root'
   }
 
   # newrelic.json template
